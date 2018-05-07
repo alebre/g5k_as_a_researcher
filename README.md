@@ -29,13 +29,16 @@ mkdir ./data/$DATE ; mkdir ./results/$DATE
 * Retrieve the json index of G5K  (please replace DATE by the current date in a weird format such as XXMonthYYY)
 ```
 curl -o ./data/$DATE/index.json -u alebre  https://intranet.grid5000.fr/g5kbib/index.json
+```
+ * Change the date inside make_g5k_profile.py
+```
 python make_g5k_profile.py
 ```
-Please note that the above script can last several days as it rely on several sleep of random duration between 30 and 120 seconds. Such random sleeps are mandatory to avoid being blocked by Google. 
+* Please note that the above script can last several days as it rely on several sleep of random duration between 30 and 120 seconds. Such random sleeps are mandatory to avoid being blocked by Google. 
 ```
 python ./compute_g5k_index.py 
 ```
-The result should be in the form fo 
+ The result should be in the form fo 
 There are 768 publications
 g5k profile: citations nb 6625, h_index 66, i_index 174 (not_evaluated 23)
 

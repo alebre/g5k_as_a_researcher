@@ -160,7 +160,7 @@ def testmain():
 	
 def main(): 
    
-    date = '17Jan2016'
+    date = '22Jan2018'
     # Get the input
     try:
         with open('data/'+date+'/index-g5k.json') as data_file:
